@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #011818;
+    color: white;
+    width: 375px;
+    height: 667px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.home-page-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.home-page-con p {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.logo {
+    margin: 20px 0;
+}
+
+.input-container {
+    width: calc(100% - 40px);
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+.input-container img.input-logo {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px; /* Adjust the size of the icon as needed */
+    height: auto;
+}
+.input-container img.search-logo {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px; /* Adjust the size of the icon as needed */
+    height: auto;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 20px 15px 20px 2px; /* Add padding-left to make space for the icon */
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
