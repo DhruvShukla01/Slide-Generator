@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "Slide-Deck-Generator"
+  "defaultProject": "Slide-Deck-Generator",
+  "cli": {
+    "analytics": "3dc61ea2-71b1-4267-8a88-c3a5412731a2"
+  }
 }

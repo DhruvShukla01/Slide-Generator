@@ -12,4 +12,13 @@ export class HomeComponent {
   goToLandingPage(): void {
     this.router.navigate(['/landing-page']);
   }
+  goToLoginPage(): void {
+    this.router.navigate(['/login-page']);
+
+  }
+
+  goToSignUpPage(): void {
+    this.router.navigate(['/signup-page']);
+
+  }
 }
