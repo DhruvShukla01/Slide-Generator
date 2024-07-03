@@ -10,18 +10,19 @@ import { ChatgptService } from '../ai.service';
 export class LandingPageComponent implements OnInit {
   theme: string ='';
   slides: string ='';
+  constructor() { }
 
-  constructor(private chatgptService: ChatgptService) { }
-  generateSlides() {
-    this.chatgptService.generateSlides(this.theme).subscribe(
-      (response) => {
-        this.slides = response.slides;
-      },
-      (error) => {
-        console.error('Error generating slides:', error);
-      }
-    );
-  }
+  // constructor(private chatgptService: ChatgptService) { }
+  // generateSlides() {
+  //   this.chatgptService.generateSlides(this.theme).subscribe(
+  //     (response) => {
+  //       this.slides = response.slides;
+  //     },
+  //     (error) => {
+  //       console.error('Error generating slides:', error);
+  //     }
+  //   );
+  // }
 
   ngOnInit(): void {
     
