@@ -9,7 +9,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HomeComponent } from './home-page/home-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { WaitlistPageComponent } from './waitlist-page/waitlist-page.component';
-import { ChatgptService } from './ai.service'; // Ensure this is the correct path and name
+import { ChatgptService } from './services/chatgpt.service';
+
 
 @NgModule({
   declarations: [

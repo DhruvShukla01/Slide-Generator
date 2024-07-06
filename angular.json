@@ -69,21 +69,22 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-            "builder": "@angular-devkit/build-angular:dev-server",
-            "options": {
-              "browserTarget": "Slide-Deck-Generator:build:development",
-              "proxyConfig": "proxy.conf.json"
-            },
-            "configurations": {
-              "production": {
-                "browserTarget": "Slide-Deck-Generator:build:production"
-              },
-              "development": {
-                "browserTarget": "Slide-Deck-Generator:build:development"
-              }
-            },
-            "defaultConfiguration": "development"
-          },
+  "builder": "@angular-devkit/build-angular:dev-server",
+  "options": {
+    "browserTarget": "Slide-Deck-Generator:build:development",
+    "proxyConfig": "proxy.conf.json"
+  },
+  "configurations": {
+    "production": {
+      "browserTarget": "Slide-Deck-Generator:build:production"
+    },
+    "development": {
+      "browserTarget": "Slide-Deck-Generator:build:development"
+    }
+  },
+  "defaultConfiguration": "development"
+}
+,
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {

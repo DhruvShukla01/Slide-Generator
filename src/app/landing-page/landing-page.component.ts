@@ -13,16 +13,25 @@ export class LandingPageComponent implements OnInit {
 
   constructor(private chatgptService: ChatgptService) { }
 
-  generateSlides() {
-    this.chatgptService.generateSlides(this.theme).subscribe(
-      (response) => {
-        this.slides = response.slides;  // Ensure your backend returns an object with a 'slides' property
-      },
-      (error) => {
-        console.error('Error generating slides:', error);
-      }
-    );
-  }
+ // In your LandingPageComponent
+ generateSlides() {
+  this.chatgptService.generateSlides(this.theme).subscribe(
+    (response) => {
+      console.log('Received response:', response);  // Check the structure of response
+      this.slides = response.slides;  // Assuming response has a 'slides' property
+      console.log('Slides data:', this.slides);  // Verify what is being set to this.slides
+    },
+    (error) => {
+      console.error('Error generating slides:', error);
+    }
+  );
+}
+downloadSlides() {
+  window.open('/download-slides', '_blank');
+}
+
+
+
 
   ngOnInit(): void {
     
