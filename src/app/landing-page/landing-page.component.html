@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Home-Page</title>
-</head>
-<body>
-    <!-- this is where the chatbot is -->
-    <div class="home-page-con">
-        <p>Enter Your<br>Slidedeck<br>Theme...</p>
-        <img class="logo" src="../../../assets/images/icon.svg">
+<div class="c">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <title>Home-Page</title>
+    </head>
+    <body>
+        <!-- this is where the chatbot is -->
+        <div class="home-page-con">
+            <p>Enter Your<br>Slidedeck<br>Theme...</p>
+            <img class="logo" src="../../../assets/images/icon.svg">
 
-        <div *ngIf="slides">
-          <h2>Generated Slides</h2>
-          <pre class="slides">{{ slides }}</pre>
+            <div *ngIf="slides">
+            <h2>Generated Slides</h2>
+            <pre class="slides">{{ slides }}</pre>
+            </div>
+            
         </div>
-        
-    </div>
-    <!-- this is where the chatbot is -->
-    <div class="input-container">
-        <img class="input-logo" src="../../../assets/images/Camera.svg">
-        <img class="search-logo" src="../../../assets/images/SearchIcon.svg" (click)="generateSlides()">
-        <input type="text" [(ngModel)]="theme" placeholder="Enter theme">
-    </div>
-</body>
-</html>
+        <!-- this is where the chatbot is -->
+        <div class="input-container">
+            <img class="input-logo" src="../../../assets/images/Camera.svg">
+            <img class="search-logo" src="../../../assets/images/SearchIcon.svg" (click)="generateSlides()">
+            <input type="text" [(ngModel)]="theme" placeholder="Enter theme">
+        </div>
+    </body>
+    </html>
+</div>
