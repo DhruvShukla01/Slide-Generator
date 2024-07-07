@@ -7,29 +7,22 @@
     <title>Home-Page</title>
 </head>
 <body>
-    <div class="home-page-con">
-        <p>Enter Your<br>Slidedeck<br>Theme...</p>
-        <img class="logo" src="../../../assets/images/icon.svg">
-    </div>
     <!-- this is where the chatbot is -->
     <div class="home-page-con">
         <p>Enter Your<br>Slidedeck<br>Theme...</p>
         <img class="logo" src="../../../assets/images/icon.svg">
-        <input [(ngModel)]="theme" placeholder="Enter theme">
-        <button (click)="generateSlides()">Generate</button>
-        <button (click)="downloadSlides()">Download Slides</button>
 
         <div *ngIf="slides">
           <h2>Generated Slides</h2>
-          <pre>{{ slides }}</pre>
+          <pre class="slides">{{ slides }}</pre>
         </div>
         
     </div>
     <!-- this is where the chatbot is -->
     <div class="input-container">
         <img class="input-logo" src="../../../assets/images/Camera.svg">
-        <img class="search-logo" src="../../../assets/images/SearchIcon.svg">
-        <input type="text">
+        <img class="search-logo" src="../../../assets/images/SearchIcon.svg" (click)="generateSlides()">
+        <input type="text" [(ngModel)]="theme" placeholder="Enter theme">
     </div>
 </body>
 </html>

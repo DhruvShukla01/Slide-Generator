@@ -62,3 +62,15 @@ body {
     outline: none;
     text-align: center;
 }
+.search-logo{
+    cursor: pointer;
+}
+.slides{
+    max-height: 30vh; 
+    max-width: 90vw;  
+    overflow: auto;   
+    padding: 1rem;   
+    border: 1px solid white;  
+    white-space: pre-wrap; 
+    background-color:  #011818;
+}
